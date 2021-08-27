@@ -28,7 +28,7 @@ const GifFinderApp = () => {
             <AddCategory setCategorias={setCategorias}
             categorias={categorias} />
                {categorias.map((categoria) => {
-                   return <GifsGrid categoria={categoria} />;
+                   return <GifsGrid key={categoria} categoria={categoria} />;
                })}
          
         </>
